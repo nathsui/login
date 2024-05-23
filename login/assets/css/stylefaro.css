@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #0c1644;
+    background: radial-gradient(ellipse at center, rgb(126, 151, 219)0%, rgb(44, 45, 131) 70%);
+    background-size: 100%;
+    text-transform: capitalize;
+}
+
+/*navbar*/
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.w-100{
+    height: 100vh;
+}
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.2;
+}
+/*carusel*/
+.carousel-item {
+    height: 70vh;
+    min-height: 300px;
+
+}
+
+.carousel-caption {
+    bottom: 100px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(0, 30, 82, 0.327);
+    z-index: 1;
+}
+
+/* reloj */
+.reloj {
+    padding-top: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fecha {
+    font-size: 15px;
+    font-weight: 5;
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tiempo {
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(15, 15, 15);
+}
+
+.lead {
+    margin-bottom: 25px;
+    font-size: 15px;
+    height: 160px;
+}
+.video  {
+    position: absolute;
+}
+
+/*caja*/
+.cont-caja{
+    text-align: justify;
+    line-height: 2em;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/*footer*/
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer{
+    padding: 80px 0;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-links{
+    text-align: left;
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-links h4{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(45, 55, 126);
+    padding-bottom: 10px;
+    display: inline-block;  
+}
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.footer-links ul li a:hover{
+    color: blueviolet;
+    padding-left: 6px;
+}
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #0c1644;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: cyan;
+}
+
+.publicidad{
+    justify-content: center;
+}
+@media(max-width: 767px) {
+    .navbar-nav {
+        text-align: left;
+    }
+
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .w-100 {
+        height: 70vh;
+    }
+
+    .carousel-caption {
+        bottom: 125px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+
+    .about-text {
+        padding-top: 50px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+    .footer-row{
+        text-align: center;
+    }
+    .footer-links {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}

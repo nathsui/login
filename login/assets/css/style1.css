@@ -1,0 +1,127 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding: 50px 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+h2{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+label {
+    color: rgb(9, 9, 9);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: rgb(188, 208, 238);
+    border: 0 solid rgb(253, 220, 141);
+    color: rgb(56, 51, 51);
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: grey;
+}
+
+.form-txt {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.form-txt a {
+    color: rgb(3, 3, 3);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-form {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 25px;
+    background-color: rgb(155, 178, 237);
+    box-shadow: 0 0 20px rgba rgb(126, 103, 241);
+    cursor: pointer;
+}
+
+.btn-form:hover {
+    background-color: rgb(206, 164, 246);
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+    form {
+        padding: 50px 30px;
+        width: 100%;
+    }
+    input {
+        padding: 15px;
+    }
+}
+
+/*prueba no se*/
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  button {
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 25px;
+    background-color: rgb(249, 130, 227);
+    box-shadow: 0 0 20px rgba rgb(126, 103, 241);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(206, 164, 246);
+  }
+  
+  #articleCounter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(126, 103, 241);
+    color: rgb(1, 1, 1);
+    padding: 10px 20px;
+    border-radius: 25px;
+  }
